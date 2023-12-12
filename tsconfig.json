@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true,
+    "allowJs": false,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@entity/*": ["./src/entity/*"],
+      "@repository/*": ["./src/repository/*"],
+      "@service/*": ["./src/service/*"],
+      "@controller/*": ["./src/controller/*"],
+      "@libs/*": ["./src/libs/*"],
+      "@services/*": ["./src/services/*"],
+      "@models": ["./src/models.ts"],
+      "@routers": ["src/routers/index.ts"]
+    }
+  },
+  "include": ["src", "src/routers/index.ts"],
+  "exclude": ["node_modules", "dist"]
+}
